@@ -1,5 +1,14 @@
-h1{
-    background-color: blue;
-    color:whitesmoke;
-    text-align: center;
+.menu{
+    width: 70vw;
+    height: 40vh;
+
+    border: 1px solid black;
+    display: flex;
+}
+.element{
+    height: 60%;
+    width: 20%;
+    border: 1px solid black;
+    margin: 1em;
+    background-color: lightblue;
 }
