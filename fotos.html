@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/stylePage.css">
+    <link rel="stylesheet" href="./css/styleImgBox.css">
+    <title>ESKORBUTO</title>
+</head>
+<body>
+    <div id="containerFoto" class="modal">
+        <span class="cerrar">&times;</span>
+        <img class="modal-content" id="foto">
+        <div id="caption"></div>
+        
+      </div>
+    <h1>ESKORBUTO</h1>
+    <div class="sidebar">
+        <div class="video">
+            <a href="./index.html"><h2>Info</h2></a>
+        </div>
+        <div class="musica">
+            <a href="./musica.html"><h2>Música</h2></a>
+        </div>
+        
+        <div class="video ">
+            <a href="./video.html"><h2>Video</h2></a>
+        </div>
+        <div class="video estoy">
+           <a href="./fotos.html"><h2>Fotos</h2></a>
+       </div>
+    </div>
+    </div>
+    <div class="container">
+        <div class="reproductor">
+            <p>"Perdida la esperanza, perdida la ilusión, los problemas continúan sin hallarse solución."
+            </p>
+        </div>
+        <div class="containerImg">
+    
+          <div class="imagenes">
+            <img src="./img/slider (1).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (2).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (3).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (4).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (5).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (6).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (7).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (8).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (9).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (10).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (11).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (1).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (2).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (3).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (4).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (5).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (6).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (7).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (8).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (9).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (10).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+          <div class="imagenes">
+            <img src="./img/slider (11).jpg" id="foto1" class="img-slider" alt="Eskorbuto">
+          </div>
+            
+        
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+ 
+    <script>
+        
+        var modal = document.getElementById("containerFoto");
+        var imagenes = document.querySelectorAll(".img-slider");
+        
+        
+        // Cojo todas las imagenes con la clase img-slider y las paso al array imagenes
+        
+        for(var i=0;i<imagenes.length;i++){
+            
+            var img =  imagenes[i];
+            var modalImg = document.getElementById("foto");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        } ;
+        
+        
+        
+        var span = document.getElementsByClassName("cerrar")[0];
+        
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+</body>
+</html>
